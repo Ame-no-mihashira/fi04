@@ -1,0 +1,82 @@
+% document layout
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{subfiles}
+
+% text options
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[useregional]{datetime2}
+
+% headers and footers
+\usepackage{fancyhdr}
+
+% math extensions
+\usepackage{mathtools}
+% \usepackage{physics}
+\usepackage{siunitx}
+\sisetup{
+  per-mode=fraction,
+  uncertainty-mode=separate,
+}
+
+% content layout
+\usepackage{float}
+\usepackage{booktabs}
+
+% external imports
+\usepackage{graphicx}
+
+% references
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage[style=apa]{biblatex}
+\addbibresource{res/external.bib}
+
+% \AtBeginDocument{\RenewCommandCopy\qty\SI}
+
+\begin{document}
+\subfile{parts/cover}
+
+% custon header and footer setup
+\pagestyle{fancy}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[L]{Facultad de Ciencias - UNI}
+\fancyfoot[R]{\thepage}
+
+\tableofcontents
+\clearpage
+
+\section{Objetivos}
+\subfile{parts/objectives}
+
+\section{Fundamento teórico}
+\subfile{parts/theory}
+
+\section{Equipo utilizado}
+\subfile{parts/equipment}
+
+\section{Procedimiento experimental}
+\subfile{parts/procedures}
+
+\section{Cálculos y resultados}
+\subfile{parts/processing}
+
+\section{Cuestionario}
+\subfile{parts/questionnaire}
+
+\section{Conclusiones}
+\subfile{parts/conclusions}
+
+\printbibliography
+
+\clearpage
+
+\listoffigures
+\listoftables
+
+\clearpage
+
+\section{Anexo}
+\subfile{parts/annex}
+\end{document}
