@@ -4,13 +4,13 @@
 \subsection{Experimento 1}
 Analizando cada intervalo de interés:
 \begin{table}[H]
-  \caption{Tiempo y velocidad media de ocho tramos.}\label{tab:meanv}
+  \caption{Datos para calcular la velocidad instantánea}\label{tab:meanv}
   \begin{center}
     \begin{tabular}{lSS}
       \toprule
       \multicolumn{1}{c}{\textbf{Tramo}} &
       \multicolumn{1}{c}{$\Delta t$ ($\delta = \qty{0.13}{\s}$)} &
-      \multicolumn{1}{c}{$\frac{\Delta x}{\Delta t}$ (\unit{\metre\per\second})}\\
+      \multicolumn{1}{c}{$\frac{\Delta x}{\Delta t}$ (\unit{\cm\per\second})}\\
       \midrule
       $AC$ & \num{9.28} & \num{2.14(4)}\\
       $AC_1$ & \num{4.66} & \num{3.20(10)}\\
@@ -24,36 +24,49 @@ Analizando cada intervalo de interés:
     \end{tabular}
   \end{center}
 \end{table}
-% 2.14 0.04
-% 3.2 0.1
-% 3.6 0.19
-% 3.98 0.46
-% 5.21 0.19
-% 5.08 0.24
-% 4.78 0.32
-% 4.59 0.58
+
+Resumiendo lo anterior en un gráfico:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.65\textwidth]{res/vavg.png}
+  \end{center}
+  \caption{Velocidad media como función del tiempo}\label{fig:vavg}
+\end{figure}
+
+Visualizando las prolongaciones de ambos conjuntos:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.35\textwidth]{res/compare.png}
+  \end{center}
+  \caption{Prolongación de las rectas de ambos tramos}\label{fig:compare}
+\end{figure}
 
 \subsection{Experimento 2}
 Analizando cada intervalo de interés:
 \begin{table}[H]
-  \caption{Tiempo y velocidad instantánea de cuatro tramos.}\label{tab:meanv2}
+  \caption{Datos para calcular la aceleración instantánea}\label{tab:meanv2}
   \begin{center}
-    \begin{tabular}{lSS}
+    \begin{tabular}{lSSS}
       \toprule
       \multicolumn{1}{c}{\textbf{Tramo}} &
       \multicolumn{1}{c}{$\Delta t$ ($\delta = \qty{0.13}{\s}$)} &
-      \multicolumn{1}{c}{$\frac{\Delta x}{\Delta t}$ (\unit{\metre\per\second})}\\
+      \multicolumn{1}{c}{$t_i$ ($\delta = \qty{0.13}{\s}$)} &
+      \multicolumn{1}{c}{$v_i$ (\unit{\metre\per\second})}\\
       \midrule
-      $AA_1$ & \num{6.92} & \num{1.45(3)}\\
-      $AA_2$ & \num{8.86} & \num{2.25(4)}\\
-      $AA_3$ & \num{11.47} & \num{2.60(3)}\\
-      $AA_4$ & \num{12.43} & \num{3.20(4)}\\
+      $AA_1$ & \num{6.92} & \num{3.46} & \num{1.45(3)}\\
+      $AA_2$ & \num{8.86} & \num{7.89} & \num{2.25(4)}\\
+      $AA_3$ & \num{11.47} & \num{10.17} & \num{2.598(34)}\\
+      $AA_4$ & \num{12.43} & \num{11.95} & \num{3.202(38)}\\
       \bottomrule
     \end{tabular}
   \end{center}
 \end{table}
-% 6.92 1.45 0.03
-% 8.86 2.25 0.04
-% 11.47 2.6 0.03
-% 12.43 3.2 0.04
+
+Resumiendo lo anterior en un gráfico:
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.65\textwidth]{res/vins.png}
+  \end{center}
+  \caption{Velocidad instantánea como función del tiempo}\label{fig:vins}
+\end{figure}
 \end{document}
