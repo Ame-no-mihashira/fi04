@@ -7,14 +7,16 @@
     \begin{align*}
       y_1 &= 0.2363x + 4.328\\
       f_1(0) &= 4.33\\
-      y_2 &= 0.2270 + 4.249\\
+      y_2 &= -0.2270x + 4.249\\
       f_2(0) &= 4.25\\
       v_i &= \frac{4.33 + 4.25}{2}\\
           &= \qty{4.29}{\cm\per\s}
     \end{align*}
   \item \textbf{¿Qué importancia tiene que las rectas se crucen antes o después del eje de
 coordenadas ($\Delta t = 0$)?}\\
-    A
+    Cuando $\Delta t = 0$ las partículas empiezan su recorrido con la misma velocidad, pero a medida que transcurre el tiempo la velocidad para cada partícula varia. 
+    En el caso del tramo $AC$, la velocidad en $x$ es positiva y decreciente, además la aceleración (pendiente) es negativa, es decir, la partícula se mueve en la dirección $+x$ y frena.
+    Y en el caso del tramo $BC$, la velocidad en x es positiva y creciente, además la aceleración (pendiente) es positiva, es decir, la partícula se mueve en la dirección $+x$ y acelera.
   \item \textbf{Del gráfico obtenido en la segunda parte, encontrar la aceleración.}\\
     Analizando la recta descrita en \ref{fig:vins}:
     \begin{align*}
@@ -24,9 +26,10 @@ coordenadas ($\Delta t = 0$)?}\\
     \end{align*}
   \item \textbf{Comparar la velocidad instantánea en el punto $C$ de la primera parte con la obtenida al ajustar el gráfico de la velocidad instantánea en función del tiempo de la segunda parte.}\\
     Utilizando el modelo lineal de \ref{fig:vins} para el punto $C$:
-\begin{align*}
-  v_i &= 0.721 + 0.1977(19.90)\\
-      &= \qty{4.66}{\cm\per\s}
-\end{align*}
+    \begin{align*}
+      v_i &= 0.721 + 0.1977(19.90)\\
+          &= \qty{4.66}{\cm\per\s}
+    \end{align*}
+    Es observable que hay una diferencia de $\qty{0.37}{\cm\per\s}$, la cual es atribuida a los errores aleatorios en las medidas.
 \end{enumerate}
 \end{document}
